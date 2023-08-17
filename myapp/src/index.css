@@ -15,3 +15,7 @@ code {
   font-family: 'Hiragino Sans';
   src: url('./fonts/Hiragino-Sans-GB-W3.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Zabal DEMO';
+  src: url('./fonts/Demo_Fonts/Fontspring-DEMO-zabal-regular.otf') format('opentype');
+}
