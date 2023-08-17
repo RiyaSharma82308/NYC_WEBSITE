@@ -100,6 +100,10 @@ export default class Home extends Component {
       <div style={{display: "flex", justifyContent: "center", marginTop:"3.3vw"}}>
       <img style={{width:"97.3vw", height:"50.72vw"}} src={homestrips} alt="Image 2" />
       </div>
+      <div style={{marginTop:"4vw", marginLeft:"3vw"}}>
+        <span style={{fontFamily:"Hiragino Sans", fontSize:"2.32vw", fontWeight:"800"}}>Our Services...</span>
+
+      </div>
       </div>
     );
   }

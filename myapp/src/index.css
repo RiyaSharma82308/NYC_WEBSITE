@@ -19,3 +19,7 @@ code {
   font-family: 'Zabal DEMO';
   src: url('./fonts/Demo_Fonts/Fontspring-DEMO-zabal-regular.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Zabal Bold';
+  src: url('./fonts/Demo_Fonts/Fontspring-DEMO-zabal-extrabold.otf') format('opentype');
+}
