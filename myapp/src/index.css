@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Hiragino Sans';
+  src: url('./fonts/Hiragino-Sans-GB-W3.otf') format('opentype');
+}

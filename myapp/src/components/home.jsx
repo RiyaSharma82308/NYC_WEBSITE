@@ -4,7 +4,7 @@ export default class Home extends Component {
   render() {
     return (
       <div style={{backgroundColor:"rgba(235, 230, 204, 0.8)", height:"56.52vw" }}>
-        <span style={{fontSize:"4.64vw"}}>We are...</span>
+        <span style={{fontSize:"4.64vw", fontFamily:"Hiragino Sans", fontWeight:'bold'}}>We are...</span>
       </div>
     )
   }
