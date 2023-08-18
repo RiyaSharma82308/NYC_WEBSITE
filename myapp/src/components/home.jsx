@@ -238,7 +238,7 @@ export default function Home() {
                 textAlign: "center",
                 cursor: "pointer",
                 marginTop: "290px",
-                marginLeft: "-700px",
+                marginLeft: "-642px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -265,6 +265,27 @@ export default function Home() {
             <br /> Labore doloremque quos id{" "}
           </p>
         </div>
+        <div
+            className="overlay-container"
+            style={{
+              position: "absolute",
+              left: "-25%", // Adjust the right position
+              bottom: "100%",
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              zIndex: "999",
+            }}
+          >
+        {clickedImg && (
+              <Modalright
+                clickedImg={clickedImg}
+                handelRotationRight={handelRotationRight}
+                setClickedImg={setClickedImg}
+              />
+            )}
+            </div>
         <div className="wrapper text-overlay-2-right ">
           {data.data.map((item, index) => (
             <div key={index} className="wrapper-images">
@@ -290,13 +311,6 @@ export default function Home() {
               marginBottom: "40px",
             }}
           >
-            {clickedImg && (
-              <Modalright
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-              />
-            )}
 
             <div
               style={{

@@ -15,10 +15,10 @@ const Modalright = ({
             <img style={{
               width: '500px',
               height: '500px',
-              marginTop: '-180px',
-              marginLeft: '10px', 
+              marginTop: '50px',
+              marginLeft: '70px', 
             }} src={clickedImg}  alt="loading.." />
-            <div onClick={handelRotationRight} className="overlay-arrows_right">
+            <div onClick={handelRotationRight} className="overlay-arrows_right_right">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
