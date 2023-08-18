@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../images/logo.png";
 import hamburger from "../images/hamburger.png";
 import "./CustomNavbar.css";
+import {Link} from 'react-router-dom'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
   return (
     <div className=" h-screen bg-gray-200 flex justify-center pt-12">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="#">
           <img
             src={logo}
             alt="Logo"
@@ -32,7 +33,7 @@ function Navbar() {
             className="d-inline-block align-top "
             style={{ marginLeft: "40px" }}
           />
-        </a>
+        </Link>
         <div className="d-flex justify-content-center align-items-center flex-grow-1">
           {/* Centering the hamburger image */}
           <img
@@ -69,9 +70,8 @@ function Navbar() {
         </div>
         }
         <div className="ml-auto">
-          {/* Box with project text */}
           <div className="custom-box" style={{ marginRight: "40px" }}>
-            <span className="center-text">Have a project in mind?</span>
+          <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>Have a project in mind?</Link>
           </div>
         </div>
         

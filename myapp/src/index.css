@@ -23,3 +23,73 @@ code {
   font-family: 'Zabal Bold';
   src: url('./fonts/Demo_Fonts/Fontspring-DEMO-zabal-extrabold.otf') format('opentype');
 }
+
+.overlay-container {
+  position: absolute;
+  top: 5px; 
+  right:90px; 
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+  background: transparent;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.overlay img {
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 60px auto;
+  box-shadow:  transparent;
+}
+
+.overlay > span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  z-index: 999;
+  cursor: pointer;
+}
+
+
+
+.overlay-arrows_right svg {
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  fill: white;
+}
+
+.overlay-arrows_right {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  position: absolute; /* Change to absolute position */
+  top: 115%; 
+  width: 35px;
+  border: 2px solid white;
+  height: 35px;
+  right: 0;
+  z-index: 999;
+  transform: translateY(-50%); /* Center the arrows vertically */
+}
+
+
+
+
+
+
+
+
