@@ -1,0 +1,50 @@
+/* ServicesCarousel.css */
+
+  /* Style for the image to the left of the center image */
+  .image-item:nth-child(odd) .image-wrapper img{
+  /* Your styling for the left image */
+  height:"2vw !important"
+}
+
+#tc 
+{
+  width:80vw;
+  margin-left: 8vw;
+}
+
+
+  /* You can further adjust margin, padding, or any other styling to fine-tune the gap */
+  #__next {
+    padding: 1.45vw;
+  }
+  .image-item {
+    padding: 1.45vw 0 1.45vw 1.45vw;
+  }
+  .custom-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.72vw;
+  }
+  #next1
+  {
+    position: absolute;
+    margin-top: -22vw;
+    margin-left:43vw;
+    width: 2.9vw;
+    height:2.46vw;
+  }
+  #prev1
+  {
+    position: absolute;
+    margin-top: -22vw;
+    margin-left: -43vw;
+    width:2.9vw;
+    height:2.46vw;
+  }
+  

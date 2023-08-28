@@ -1,0 +1,37 @@
+/* Industriescarousel.css */
+.carousel-indicators {
+   top:1vw/* Adjust the position of the indicators */  
+}
+
+
+.carousel-indicators [data-bs-target] {
+  width: 0.72vw !important;
+  height: 0.72vw !important;
+}
+
+.carousel-indicators .active {
+  background-color: black; /* Adjust the color of the active indicator */
+  opacity: 1; /* Set full opacity for the active indicator */
+}
+
+#icprev
+{
+  padding-top: 18vw;
+  width:2.9vw;
+}
+#icnext
+{
+  padding-top: 18vw;
+  width:2.9vw; 
+}
+.ictagline
+{
+  font-family: Hiragino Sans Bold;
+  font-size: 2.9vw;
+  margin-top:14vw;
+}
+.carousel-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

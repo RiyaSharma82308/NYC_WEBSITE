@@ -2,11 +2,6 @@ import React, { useState, Component } from "react";
 import homewhy1 from "../images/homewhy1.png";
 import homewhy2 from "../images/homewhy2.png";
 import homewhy3 from "../images/homewhy3.png";
-import homescaling from "../images/homescaling.png";
-import homeestate from "../images/homeestate.png";
-import hometea from "../images/hometea.png";
-import homerunway from "../images/homerunway.png";
-import homestrips from "../images/homestrips.png";
 import "./ImageWithText.css";
 import Box3 from "./Box3";
 import Box5 from "./Box5";
@@ -334,7 +329,7 @@ export default function Home() {
                 }}
                >
             <button
-              onClick={this.toggleDropdown}
+              onClick={toggleDropdown}
               style={{
                 fontFamily: 'Zabal DEMO',
                 fontSize: '1.3vw',
@@ -393,7 +388,7 @@ export default function Home() {
                 }}
                >
             <button
-              onClick={this.toggleDropdown}
+              onClick={toggleDropdown}
               style={{
                 fontFamily: 'Zabal DEMO',
                 fontSize: '1.3vw',

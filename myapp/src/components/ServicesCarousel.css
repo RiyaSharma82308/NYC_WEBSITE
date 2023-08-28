@@ -1,0 +1,33 @@
+#__next {
+  padding: 1.45vw;
+}
+.image-item {
+  padding: 1.45vw 0 1.45vw 1.45vw;
+}
+.custom-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.72vw;
+}
+#next
+{
+  position: absolute;
+  margin-top: -16vw;
+  margin-left:45vw;
+  width: 2.9vw;
+  height:2.46vw;
+}
+#prev
+{
+  position: absolute;
+  margin-top: -16vw;
+  margin-left: -45vw;
+  width:2.9vw;
+  height:2.46vw;
+}
