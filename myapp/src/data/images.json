@@ -2,32 +2,91 @@
     "data": [
       {
         "text": "Description of image is here image1",
-        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345141/NYC_scaling_small_1_odj2nj.png"
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345141/NYC_scaling_small_1_odj2nj.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png"
       },
       {
         "text": "Description of image is here image2",
-        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345224/NYC_scaling_2_rygqag.png"
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345224/NYC_scaling_2_rygqag.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png"
       },
       {
         "text": "Description of image is here image3",
-        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345252/NYC_scaling_3_pmk5gb.png"
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345252/NYC_scaling_3_pmk5gb.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592788/home_green_enlarged_xqkjkr.png"
       }
     ],
+    
     
     "datayellow": [
         {
           "text": "Description of image is here image1",
-          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358696/yellow_box_img1_ojoma9.png"
+          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358696/yellow_box_img1_ojoma9.png",
+          "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png"
         },
         {
           "text": "Description of image is here image2",
-          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358741/yellow_box_img2_mwfd6t.png"
+          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358741/yellow_box_img2_mwfd6t.png",
+          "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png"
         },
         {
           "text": "Description of image is here image3",
-          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358741/yellow_box_img3_qp2iju.png"
+          "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692358741/yellow_box_img3_qp2iju.png",
+          "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592788/home_green_enlarged_xqkjkr.png"
         }
-    ]
+    ],
+    "datagreen": [
+      {
+        "text": "Description of image is here image1",
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img1_psmc0y.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png"
+      },
+      {
+        "text": "Description of image is here image2",
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img2_afwake.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png"
+      },
+      {
+        "text": "Description of image is here image3",
+        "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img3_kymyof.png",
+        "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png"
+      }
+  ],
+  "dataviolet2": [
+    {
+      "text": "Description of image is here image1",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345141/NYC_scaling_small_1_odj2nj.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png"
+    },
+    {
+      "text": "Description of image is here image2",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345224/NYC_scaling_2_rygqag.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png"
+    },
+    {
+      "text": "Description of image is here image3",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345252/NYC_scaling_3_pmk5gb.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592788/home_green_enlarged_xqkjkr.png"
+    }
+  ],
+  "datagreen2": [
+    {
+      "text": "Description of image is here image1",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img1_psmc0y.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png"
+    },
+    {
+      "text": "Description of image is here image2",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img2_afwake.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png"
+    },
+    {
+      "text": "Description of image is here image3",
+      "link": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692427147/green_box_img3_kymyof.png",
+      "enlarged": "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png"
+    }
+]
+  
 
     
   }

@@ -1,0 +1,11 @@
+/* ServiceForm.css */
+.custom-button {
+    border-radius: 0vw; /* Remove border radius */
+    border: 0.06vw solid black; /* Add a black border */
+    background-color: transparent; /* Set background to transparent */
+    width: 47%; /* Allow buttons to expand to fit content */
+    padding: 0.63vw 1.27vw; /* Add padding to buttons */
+    color: black; /* Set text color to black */
+    /* font-weight: bold; Optionally make text bold */
+  }
+  

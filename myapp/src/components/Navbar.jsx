@@ -28,10 +28,8 @@ function Navbar() {
           <img
             src={logo}
             alt="Logo"
-            width="150px"
-            height="50px"
             className="d-inline-block align-top "
-            style={{ marginLeft: "40px" }}
+            style={{ marginLeft: "2.9vw", width:"9.81vw", height:"2.72vw" }}
           />
         </Link>
         <div className="d-flex justify-content-center align-items-center flex-grow-1">
@@ -41,13 +39,13 @@ function Navbar() {
             onClick={() =>  setOpen(!open)}
             src={hamburger}
             alt="hamburger"
-            style={{ width: '50px', height: '50px' }}
+            style={{ width: '3.16vw', height: '3.16vw' }}
             className="h-6 w-6 object-cover border-4 rounded-full cursor-pointer"
           />
         </div>
         {
           open &&
-          <div ref={menuRef} className="position-absolute dropdown-menu show p-4" style={{ backgroundColor: "#EBE6CC",top:76, left: 0, width: "100%" , zIndex: 1000}}>
+          <div ref={menuRef} className="position-absolute dropdown-menu show p-4" style={{ backgroundColor: "#EBE6CC",top:"4.3vw", left: 0, width: "100%" , height: "43.04vw",zIndex: 1000}}>
           <ul className="text-center list-unstyled">
             {Menus.slice(0, Menus.length - 2).map((menu) => (
               <li
@@ -58,22 +56,20 @@ function Navbar() {
                 {menu}
               </li>
             ))}
-            <li className="p-2 text-lg cursor-pointer" style={{ margin: "20px 50px", display: "inline-block" }}>
+            <li className="p-2 text-lg cursor-pointer" style={{ margin: "1.27vw 3.16vw", display: "inline-block" }}>
             <img src={require("../images/mail.png")} alt="Image" className="mr-2 image-icon " />
               {Menus[Menus.length - 2]}
             </li>
-            <li className="p-2 text-lg cursor-pointer" style={{ margin: "20px 50px", display: "inline-block" }}>
+            <li className="p-2 text-lg cursor-pointer" style={{ margin: "1.27vw 3.16vw", display: "inline-block" }}>
             <img src={require("../images/call.png")} className="mr-2 image-icon" />
               {Menus[Menus.length - 1]}
             </li>
           </ul>
         </div>
         }
-        <div className="ml-auto">
-          <div className="custom-box" style={{ marginRight: "40px" }}>
-          <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>Have a project in mind?</Link>
-          </div>
-        </div>
+        <Link to="/" style={{paddingTop:"0.3vw",paddingBottom:"0.5vw",border: "0.06vw solid #231F20",color: 'black', width: "18.99vw", height:"2.53vw", textDecoration: 'none', fontSize:"1.14vw", display:"flex", justifyContent:"center"}}>
+        Have a project in mind?
+        </Link>
         
       </nav>
     </div>

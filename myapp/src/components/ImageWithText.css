@@ -5,39 +5,39 @@
   
   .text-overlay {
     position: absolute;
-    top: 100px; /* Adjust the margin from the top */
-    left: 100px; /* Adjust the margin from the left */
+    /* top: 6.33vw; Adjust the margin from the top */
+    left: 6.33vw; /* Adjust the margin from the left */
     background-color: transparent; /* Background color with transparency */
-    padding: 40px;
+    padding: 2.53vw;
   }
   .text-overlay-right {
     position: absolute;
-    top: 100px; /* Adjust the margin from the top */
-    right: 450px; /* Adjust the margin from the left */
+    top: 3.33vw; /* Adjust the margin from the top */
+    right: 25.48vw; /* Adjust the margin from the left */
     background-color: transparent; /* Background color with transparency */
-    padding: 40px;
+    padding: 2.53vw;
   }
 
   .text-overlay-2 {
     position: absolute;
-    top: 400px; /* Adjust the margin from the top */
-    left: 50px; /* Adjust the margin from the left */
-    padding: 40px;
+    top: 25.32vw; /* Adjust the margin from the top */
+    left: 3.16vw; /* Adjust the margin from the left */
+    padding: 2.53vw;
   }
   .text-overlay-2-right {
-    position: absolute;
-    top: 400px; /* Adjust the margin from the top */
-    right: 50px; /* Adjust the margin from the left */
+    position: relative;
+    top: 29vw; /* Adjust the margin from the top */
+    left: 47.16vw; /* Adjust the margin from the left */
     /* background-color: #4950A2; Background color with transparency */
-    padding: 40px;
+    padding: 2.53vw;
   }
   
   .icon-image {
     position: absolute;
-    bottom: 100px; /* Adjust the margin from the bottom */
-    left: 100px; /* Adjust the margin from the left */
-    width: 400px; /* Set the width of the icon image */
-    height: 400px; /* Set the height of the icon image */
+    bottom: 6.33vw; /* Adjust the margin from the bottom */
+    left: 6.33vw; /* Adjust the margin from the left */
+    width: 25.32vw; /* Set the width of the icon image */
+    height: 25.32vw; /* Set the height of the icon image */
   }
   .wrapper-images {
     display: inline-block; /* Display images horizontally */
@@ -45,8 +45,8 @@
   }
   
   .wrapper-images img {
-    width: 200px; /* Adjust the width of the images */
-    height: 200px; /* Adjust the height of the images */
+    width: 12.66vw; /* Adjust the width of the images */
+    height: 12.66vw; /* Adjust the height of the images */
     cursor: pointer; /* Show pointer cursor on hover */
   }
   
@@ -54,5 +54,42 @@
   .modal-content {
     flex: 1; /* Take up available space */
     text-align: right; /* Align the content to the right */
-    padding: 20px; /* Add padding to all sides */
+    padding: 1.27vw; /* Add padding to all sides */
+  }
+
+
+
+  /* about page */
+
+  .text-overlay-about {
+    position: absolute;
+    top: 12.66vw; /* Adjust the margin from the top */
+    left: 6.33vw; /* Adjust the margin from the left */
+    background-color: transparent; /* Background color with transparency */
+    padding: 2.53vw;
+    font-size: 31.65vw; /* Adjust the font size */
+  font-weight: bold;
+  }
+  .text-overlay-about-2 {
+    position: absolute;
+    top: 79.11vw; /* Adjust the margin from the top */
+    left: 6.33vw; /* Adjust the margin from the left */
+    background-color: transparent; /* Background color with transparency */
+    padding: 2.53vw;
+    font-size: 31.65vw; /* Adjust the font size */
+  font-weight: bold;
+  }
+  .text-overlay-about-box {
+    position: absolute;
+    top: 30.38vw; /* Adjust the margin from the top */
+    left: 6.33vw; /* Adjust the margin from the left */
+    background-color: transparent; /* Background color with transparency */
+    padding: 2.53vw;
+  }
+  .text-overlay-about-box-2 {
+    position: absolute;
+    top: 30.38vw; /* Adjust the margin from the top */
+    left: 36.08vw; /* Adjust the margin from the left */
+    background-color: transparent; /* Background color with transparency */
+    padding: 2.53vw;
   }

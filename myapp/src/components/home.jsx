@@ -8,30 +8,89 @@ import hometea from "../images/hometea.png";
 import homerunway from "../images/homerunway.png";
 import homestrips from "../images/homestrips.png";
 import "./ImageWithText.css";
+import Box3 from "./Box3";
+import Box5 from "./Box5";
+import Box2 from "./Box2";
+import Box4 from "./Box4";
+import Box from "./Box";
 import NYC_scaling_small_1 from "../images/NYC_scaling_small_1.png";
 import Navbar from "./Navbar";
+import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import data from "../data/images.json";
-import datayellow from "../data/images.json";
 import Modal from "./Modal";
 import Modalright from "./Modalright";
+import ServicesCarousel from './servicescarousel';
+import Testimonialscarousel from './Testimonialscarousel';
+import Homecarousel from './Homecarousel';
 
 export default function Home() {
   // const defaultClickedImg = ;
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible(prevState => !prevState);
+  };
   const defaultClickedImg =
-    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692345141/NYC_scaling_small_1_odj2nj.png";
+    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png";
   const [clickedImg, setClickedImg] = useState(defaultClickedImg);
   const [currentIndex, setCurrentIndex] = useState(null);
 
+  const defaultClickedImggreen =
+    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png";
+  const [clickedImggreen, setClickedImggreen] = useState(
+    defaultClickedImggreen
+  );
+  const [currentIndexgreen, setCurrentIndexgreen] = useState(null);
+
+  const defaultClickedImgyellow =
+    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png";
+  const [clickedImgyellow, setClickedImgyellow] = useState(
+    defaultClickedImgyellow
+  );
+  const [currentIndexyellow, setCurrentIndexyellow] = useState(null);
+
+  const defaultClickedImgviolet2 =
+    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692593607/home_beige_enlarged_mvwjyh.png";
+  const [clickedImgviolet2, setClickedImgviolet2] = useState(
+    defaultClickedImgviolet2
+  );
+  const [currentIndexviolet2, setCurrentIndexviolet2] = useState(null);
+
+  const defaultClickedImggreen2 =
+    "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png";
+  const [clickedImggreen2, setClickedImggreen2] = useState(
+    defaultClickedImggreen2
+  );
+  const [currentIndexgreen2, setCurrentIndexgreen2] = useState(null);
+
   const handleClick = (item, index) => {
     setCurrentIndex(index);
-    setClickedImg(item.link);
+    console.log(currentIndex);
+    setClickedImg(item.enlarged);
+  };
+  const handleClickgreen = (item, index) => {
+    setCurrentIndexgreen(index);
+    console.log(currentIndexgreen);
+    setClickedImggreen(item.enlarged);
+  };
+  const handleClickyellow = (item, index) => {
+    setCurrentIndexyellow(index);
+    setClickedImgyellow(item.enlarged);
+  };
+  const handleClickviolet2 = (item, index) => {
+    setCurrentIndexviolet2(index);
+    setClickedImgviolet2(item.enlarged);
+  };
+  const handleClickgreen2 = (item, index) => {
+    setCurrentIndexgreen2(index);
+    setClickedImggreen2(item.enlarged);
   };
   const handelRotationRight = () => {
     const totalLength = data.data.length;
     if (currentIndex + 1 >= totalLength) {
       setCurrentIndex(0);
-      const newUrl = data.data[0].link;
+      const newUrl = data.data[0].enlarged;
       setClickedImg(newUrl);
       return;
     }
@@ -39,26 +98,75 @@ export default function Home() {
     const newUrl = data.data.filter((item) => {
       return data.data.indexOf(item) === newIndex;
     });
-    const newItem = newUrl[0].link;
+    const newItem = newUrl[0].enlarged;
     setClickedImg(newItem);
     setCurrentIndex(newIndex);
   };
 
-  const handelRotationLeft = () => {
-    const totalLength = data.data.length;
-    if (currentIndex === 0) {
-      setCurrentIndex(totalLength - 1);
-      const newUrl = data.data[totalLength - 1].link;
-      setClickedImg(newUrl);
+  const handelRotationRight_green = () => {
+    const totalLength = data.datagreen.length;
+    if (currentIndexgreen + 1 >= totalLength) {
+      setCurrentIndexgreen(0);
+      const newUrl = data.datagreen[0].enlarged;
+      setClickedImggreen(newUrl);
       return;
     }
-    const newIndex = currentIndex - 1;
-    const newUrl = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
+    const newIndex = currentIndexgreen + 1;
+    const newUrl = data.datagreen.filter((item) => {
+      return data.datagreen.indexOf(item) === newIndex;
     });
-    const newItem = newUrl[0].link;
-    setClickedImg(newItem);
-    setCurrentIndex(newIndex);
+    const newItem = newUrl[0].enlarged;
+    setClickedImggreen(newItem);
+    setCurrentIndexgreen(newIndex);
+  };
+
+  const handelRotationRight_yellow = () => {
+    const totalLength = data.datayellow.length;
+    if (currentIndexyellow + 1 >= totalLength) {
+      setCurrentIndexyellow(0);
+      const newUrl = data.datayellow[0].enlarged;
+      setClickedImgyellow(newUrl);
+      return;
+    }
+    const newIndex = currentIndexyellow + 1;
+    const newUrl = data.datayellow.filter((item) => {
+      return data.datayellow.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].enlarged;
+    setClickedImgyellow(newItem);
+    setCurrentIndexyellow(newIndex);
+  };
+  const handelRotationRight_violet2 = () => {
+    const totalLength = data.dataviolet2.length;
+    if (currentIndexviolet2 + 1 >= totalLength) {
+      setCurrentIndexviolet2(0);
+      const newUrl = data.dataviolet2[0].enlarged;
+      setClickedImgviolet2(newUrl);
+      return;
+    }
+    const newIndex = currentIndexviolet2 + 1;
+    const newUrl = data.dataviolet2.filter((item) => {
+      return data.dataviolet2.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].enlarged;
+    setClickedImgviolet2(newItem);
+    setCurrentIndexviolet2(newIndex);
+  };
+  const handelRotationRight_green2 = () => {
+    const totalLength = data.datagreen2.length;
+    if (currentIndexgreen2 + 1 >= totalLength) {
+      setCurrentIndexgreen2(0);
+      const newUrl = data.datagreen2[0].enlarged;
+      setClickedImggreen2(newUrl);
+      return;
+    }
+    const newIndex = currentIndexgreen2 + 1;
+    const newUrl = data.datagreen2.filter((item) => {
+      return data.datagreen2.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].enlarged;
+    setClickedImggreen2(newItem);
+    setCurrentIndexgreen2(newIndex);
   };
 
   return (
@@ -73,6 +181,7 @@ export default function Home() {
           height: "56.52vw",
           paddingLeft: "5%", // Add left padding for the container
           marginBottom: "2vw", // Add margin at the bottom to create space
+          overflow: "hidden",
         }}
       >
         <span
@@ -91,7 +200,7 @@ export default function Home() {
           style={{
             fontFamily: "Zabal DEMO",
             fontSize: "1.74vw",
-            fontWeight: "500", // Adjusted font weight
+            fontWeight: "31.65vw", // Adjusted font weight
             textAlign: "left", // Align text to the left
             marginTop: "1vw", // Add some top margin to separate the spans
           }}
@@ -99,7 +208,7 @@ export default function Home() {
           Lorem ipsum dolor sit amet,
           <br /> consectetur adipiscing elit.
           <br />
-          <br /> <span style={{ fontWeight: "900" }}>Dolor sit amet.</span>
+          <br /> <span style={{ fontWeight: "56.96vw" }}>Dolor sit amet.</span>
         </span>
       </div>
 
@@ -110,7 +219,7 @@ export default function Home() {
           style={{
             fontFamily: "Hiragino Sans",
             fontSize: "2.32vw",
-            fontWeight: "800",
+            fontWeight: "50.63vw",
           }}
         >
           Why we exist?
@@ -126,7 +235,7 @@ export default function Home() {
           paddingRight: "6vw",
           fontSize: "1.3vw",
           fontFamily: "Zabal DEMO",
-          fontWeight: "500",
+          fontWeight: "31.65vw",
         }}
       >
         <div style={{ textAlign: "center" }}>
@@ -182,367 +291,143 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="image-container">
-        <img
-          src={require("../images/NYC_scaling_box.png")}
-          alt="Image"
-          className="img-fluid"
-        />
-        <div className="text-overlay">
-          <h2>NYC SCALING</h2>
-          <p>
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-            <br /> Labore doloremque quos id{" "}
-          </p>
-        </div>
-        <div className="wrapper text-overlay-2 ">
-          {data.data.map((item, index) => (
-            <div key={index} className="wrapper-images">
-              <img
-                src={item.link}
-                alt={item.text}
-                onClick={() => handleClick(item, index)}
-              />
-            </div>
-          ))}
-          <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              // top: "10px", // Adjust the top position
-              left: "100%", // Adjust the right position
-              bottom: "60%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-              marginRight: "50px", // Add margin to the right
-              marginBottom: "40px",
-            }}
-          >
-            {clickedImg && (
-              <Modal
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-                // handelRotationLeft={handelRotationLeft}
-              />
-            )}
-            <div
+      <Box />
+
+      <br />
+
+      <Box2 />
+
+      <br />
+      <Box3 />
+      <br />
+      <Box4 />
+      <br />
+      <Box5 />
+      <br/>
+      <div style={{marginTop:"4vw", marginLeft:"3vw"}}>
+        <span style={{fontFamily:"Hiragino Sans Bold", fontSize:"2.32vw", fontWeight:"800"}}>Our Services...</span>
+      </div>
+      <div>
+
+        <ServicesCarousel/>
+      </div>
+      <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            margin: '2vw 0',
+          }}
+        >
+          {!isDropdownVisible && (
+                 <div
+                 style={{
+                  border: '0.07vw solid rgba(35, 31, 32, 1)',
+                  width: '86.23vw',
+                  height: '2.9vw',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginLeft: '3vw',
+                  marginRight: '3vw',
+                  marginTop: '6.5vw',
+                }}
+               >
+            <button
+              onClick={this.toggleDropdown}
               style={{
-                width: "300px",
-                height: "45px",
-                border: "2px solid white",
-                padding: "10px",
-                textAlign: "center",
-                cursor: "pointer",
-                marginTop: "290px",
-                marginLeft: "-642px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
+                fontFamily: 'Zabal DEMO',
+                fontSize: '1.3vw',
+                fontWeight: '500',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
               }}
             >
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                Visit website
-              </Link>
+              View Founder’s Note
+            </button>
             </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div className="image-container">
-        <img
-          src={require("../images/green_box.png")}
-          alt="Image"
-          className="img-fluid"
-        />
-        <div className="text-overlay-right">
-          <h2>NYC Estate</h2>
-          <p>
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-            <br /> Labore doloremque quos id{" "}
-          </p>
-        </div>
+          )}
+
+          {isDropdownVisible && (
+            <div style={{marginTop:"3.4vw"}}>
+              <span style={{fontFamily:"Hiragino Sans Bold", fontSize:"2.32vw", marginLeft:"-10vw"}}>Founder’s Note...</span>
         <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              left: "-25%", // Adjust the right position
-              bottom: "100%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-            }}
-          >
-        {clickedImg && (
-              <Modalright
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-              />
-            )}
-            </div>
-        <div className="wrapper text-overlay-2-right ">
-          {data.data.map((item, index) => (
-            <div key={index} className="wrapper-images">
-              <img
-                src={item.link}
-                alt={item.text}
-                onClick={() => handleClick(item, index)}
-              />
-            </div>
-          ))}
-          <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              left: "100%", // Adjust the right position
-              bottom: "60%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-              marginRight: "50px", // Add margin to the right
-              marginBottom: "40px",
-            }}
-          >
+        style={{
+          display: 'flex', // Display image and text side by side
+          alignItems: 'center',
+          width: '70vw', // Adjusted width
+          padding: '1vw',
+          marginTop: '2.6vw',
+          backgroundColor: 'white',
+          marginLeft: 'auto',
+          marginRight: 'auto',
 
-            <div
+        }}
+      >
+        <img
+          style={{ width: '20.14vw', height: '26.88vw', marginRight: '1vw' }}
+          src={require('../images/karan.png')}
+          alt="Founder"
+        />
+              <p style={{fontFamily:"Zabal DEMO", fontSize:"1.3vw", fontWeight:"bold"}}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. Maecenas vel dictum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel dictum risus. 
+              </p>
+            </div>
+            </div>
+          )}
+
+          {isDropdownVisible && (
+                  
+                 <div
+                 style={{
+                  border: '0.07vw solid rgba(35, 31, 32, 1)',
+                  width: '86.23vw',
+                  height: '2.9vw',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginLeft: '3vw',
+                  marginRight: '3vw',
+                  marginTop: '2vw',
+                }}
+               >
+            <button
+              onClick={this.toggleDropdown}
               style={{
-                width: "300px",
-                height: "45px",
-                border: "2px solid white",
-                padding: "10px",
-                textAlign: "center",
-                cursor: "pointer",
-                marginTop: "290px",
-                marginLeft: "-640px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
+                fontFamily: 'Zabal DEMO',
+                fontSize: '1.3vw',
+                fontWeight: '500',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
               }}
             >
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                Visit website
-              </Link>
+              Hide Founder’s Note
+            </button>
             </div>
-          </div>
+          )}
         </div>
-      </div>
+        <div id='tc'>
+          <Testimonialscarousel/>
+        </div>
+        <Link className="btn btn-outline-warning" to="/services">
+          View all services
+        </Link>
+        
+
+
+
+
+
+
+
+
+
+
 
       <br />
-      <div className="image-container">
-        <img
-          src={require("../images/yellow_box.png")}
-          alt="Image"
-          className="img-fluid"
-        />
-        <div className="text-overlay">
-          <h2>NYC Tea</h2>
-          <p>
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-            <br /> Labore doloremque quos id{" "}
-          </p>
-        </div>
-        <div className="wrapper text-overlay-2 ">
-          {data.datayellow.map((item, index) => (
-            <div key={index} className="wrapper-images">
-              <img
-                src={item.link}
-                alt={item.text}
-                onClick={() => handleClick(item, index)}
-              />
-            </div>
-          ))}
-          <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              // top: "10px", // Adjust the top position
-              left: "100%", // Adjust the right position
-              bottom: "60%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-              marginRight: "50px", // Add margin to the right
-              marginBottom: "40px",
-            }}
-          >
-            {clickedImg && (
-              <Modal
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-              />
-            )}
-            <div
-              style={{
-                width: "300px",
-                height: "45px",
-                border: "2px solid white",
-                padding: "10px",
-                textAlign: "center",
-                cursor: "pointer",
-                marginTop: "290px",
-                marginLeft: "-700px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                Visit website
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div className="image-container">
-        <img
-          src={require("../images/NYC_scaling_box.png")}
-          alt="Image"
-          className="img-fluid"
-        />
-        <div className="text-overlay">
-          <h2>NYC SCALING</h2>
-          <p>
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-            <br /> Labore doloremque quos id{" "}
-          </p>
-        </div>
-        <div className="wrapper text-overlay-2 ">
-          {data.data.map((item, index) => (
-            <div key={index} className="wrapper-images">
-              <img
-                src={item.link}
-                alt={item.text}
-                onClick={() => handleClick(item, index)}
-              />
-            </div>
-          ))}
-          <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              // top: "10px", // Adjust the top position
-              left: "100%", // Adjust the right position
-              bottom: "60%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-              marginRight: "50px", // Add margin to the right
-              marginBottom: "40px",
-            }}
-          >
-            {clickedImg && (
-              <Modal
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-                // handelRotationLeft={handelRotationLeft}
-              />
-            )}
-            <div
-              style={{
-                width: "300px",
-                height: "45px",
-                border: "2px solid white",
-                padding: "10px",
-                textAlign: "center",
-                cursor: "pointer",
-                marginTop: "290px",
-                marginLeft: "-700px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                Visit website
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div className="image-container">
-        <img
-          src={require("../images/green_box.png")}
-          alt="Image"
-          className="img-fluid"
-        />
-        <div className="text-overlay">
-          <h2>NYC Estate</h2>
-          <p>
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-            <br /> Labore doloremque quos id{" "}
-          </p>
-        </div>
-        <div className="wrapper text-overlay-2 ">
-          {data.data.map((item, index) => (
-            <div key={index} className="wrapper-images">
-              <img
-                src={item.link}
-                alt={item.text}
-                onClick={() => handleClick(item, index)}
-              />
-            </div>
-          ))}
-          <div
-            className="overlay-container"
-            style={{
-              position: "absolute",
-              left: "100%", // Adjust the right position
-              bottom: "60%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "flex-start",
-              zIndex: "999",
-              marginRight: "50px", // Add margin to the right
-              marginBottom: "40px",
-            }}
-          >
-            {clickedImg && (
-              <Modal
-                clickedImg={clickedImg}
-                handelRotationRight={handelRotationRight}
-                setClickedImg={setClickedImg}
-                // handelRotationLeft={handelRotationLeft}
-              />
-            )}
-            <div
-              style={{
-                width: "300px",
-                height: "45px",
-                border: "2px solid white",
-                padding: "10px",
-                textAlign: "center",
-                cursor: "pointer",
-                marginTop: "290px",
-                marginLeft: "-700px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                Visit website
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactForm />
     </div>
   );
 }

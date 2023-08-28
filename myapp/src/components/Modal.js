@@ -1,39 +1,32 @@
-const Modal = ({
-    clickedImg,
-    setClickedImg,
-    handelRotationRight,
-    handelRotationLeft
-  }) => {
-    const handleClick = (e) => {
-      if (e.target.classList.contains("dismiss")) {
-        setClickedImg(null);
-      }
-    };
-    return (
-        <>
-        <div className="overlay-container">
-          <div onClick={handleClick}>
-            <img style={{ width: '500px', height: '500px', marginTop: '-180px', marginLeft: '-90px'}} src={clickedImg}  alt="loading.." />
-            <div onClick={handelRotationRight} className="overlay-arrows_right">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
+import right_arrow from "../images/right_arrow.png"
+const Modal = ({ clickedImg, setClickedImg, handelRotationRight }) => {
+  const handleClick = (e) => {
+    if (e.target.classList.contains("dismiss")) {
+      setClickedImg(null);
+    }
+  };
+  return (
+    <>
+      <div className="overlay-container-2">
+        <div onClick={handleClick}>
+          <img
+            style={{
+              width: "28.65vw",
+              height: "35.97vw",
+              marginTop: "-17.09vw",
+              marginLeft: "-5.7vw",
+            }}
+            src={clickedImg}
+            alt="loading.."
+          />
+          <div onClick={handelRotationRight} className="overlay-arrows_right" style={{marginLeft: "25.27vw", marginTop:"2.63vw"}}>
+            <div>
+            <img src={right_arrow} style={{ marginLeft: "2.9vw", width:"2.53vw", height:"2.15vw" }}></img>
             </div>
           </div>
-          
-          </div>
-        </>
-      );
+        </div>
+      </div>
+    </>
+  );
 };
 export default Modal;
