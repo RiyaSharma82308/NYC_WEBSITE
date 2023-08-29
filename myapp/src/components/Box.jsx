@@ -163,6 +163,7 @@ export default function Box() {
               lineHeight: "3.8vw",
               letterSpacing: "0em",
               textAlign: "left",
+              fontFamily:'Hiragino Sans Bold'
             }}
           >
             NYC SCALING
@@ -174,6 +175,7 @@ export default function Box() {
               lineHeight: "1.84vw",
               letterSpacing: "0em",
               textAlign: "left",
+              fontFamily:'Zabal DEMO'
             }}
           >
             Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.
@@ -212,6 +214,7 @@ export default function Box() {
               justifyContent: "center",
               marginLeft: "8.86vw",
               marginTop: "3.48vw",
+              fontFamily:'Zabal DEMO'
             }}
           >
             Visit website

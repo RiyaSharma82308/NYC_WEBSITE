@@ -76,7 +76,7 @@ const Simple = ({ deviceType }) => {
       deviceType={deviceType}
       itemClass="image-item"
       responsive={responsive}
-      customButtonGroup={<div className="custom-button-group">
+      customButtonGroup={<div className="custom-button-group2">
         <CustomPrevButton onClick={handlePrev} />
         <CustomNextButton onClick={handleNext} />
       </div>}
@@ -106,13 +106,13 @@ const Simple = ({ deviceType }) => {
 };
 
 const CustomNextButton = ({ onClick }) => (
-  <button onClick={onClick} className="custom-button">
+  <button onClick={onClick} className="custom-button2">
     <img id='next' src={nextButtonImage} alt="Next" />
   </button>
 );
 
 const CustomPrevButton = ({ onClick }) => (
-  <button onClick={onClick} className="custom-button">
+  <button onClick={onClick} className="custom-button2">
     <img id='prev' src={prevButtonImage} alt="Previous" />
   </button>
 );

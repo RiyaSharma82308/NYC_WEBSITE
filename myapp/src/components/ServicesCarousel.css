@@ -4,13 +4,13 @@
 .image-item {
   padding: 1.45vw 0 1.45vw 1.45vw;
 }
-.custom-button {
+.custom-button2 {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-.custom-button-group {
+.custom-button-group2 {
   display: flex;
   justify-content: center;
   margin-top: 0.72vw;

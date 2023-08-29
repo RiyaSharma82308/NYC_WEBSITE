@@ -62,6 +62,7 @@ const ContactForm = () => {
             letterSpacing: "0em",
             textAlign: "left",
             left:"8.35vw",
+            font:'Hiragino Sans Bold'
             // backgroundColor:"brown"
           }}
         >
@@ -98,8 +99,8 @@ const ContactForm = () => {
             fontSize: "1.14vw",
             display: "flex",
             justifyContent: "center",
-            // backgroundColor:"brown",
             left:"76.57vw",
+            alignItems:"center"
           }}
         >
           Have a project in mind?

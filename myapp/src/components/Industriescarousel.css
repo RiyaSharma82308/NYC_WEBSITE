@@ -1,6 +1,7 @@
 /* Industriescarousel.css */
 .carousel-indicators {
-   top:1vw/* Adjust the position of the indicators */  
+
+   top:1vw;/* Adjust the position of the indicators */  
 }
 
 
@@ -16,19 +17,20 @@
 
 #icprev
 {
-  padding-top: 18vw;
+  margin-top: 16.09vw;
   width:2.9vw;
 }
 #icnext
 {
-  padding-top: 18vw;
+  margin-top: 16.09vw;
   width:2.9vw; 
 }
 .ictagline
 {
   font-family: Hiragino Sans Bold;
   font-size: 2.9vw;
-  margin-top:14vw;
+  margin-top:16vw;
+  height:50px;
 }
 .carousel-item-content {
   display: flex;

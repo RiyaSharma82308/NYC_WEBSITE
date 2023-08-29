@@ -192,6 +192,7 @@ export default function Box2() {
                 letterSpacing: "0em",
                 textAlign: "left",
                 color: "white",
+                fontFamily:'Hiragino Sans Bold'
               }}
             >
               NYC Estate
@@ -204,6 +205,7 @@ export default function Box2() {
                 letterSpacing: "0em",
                 textAlign: "left",
                 color: "white",
+                fontFamily:'Zabal DEMO'
               }}
             >
               Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
@@ -240,6 +242,7 @@ export default function Box2() {
               justifyContent: "center",
               marginLeft: "51.36vw",
               marginTop: "3.48vw",
+              fontFamily:'Zabal DEMO'
             }}
           >
             Visit website

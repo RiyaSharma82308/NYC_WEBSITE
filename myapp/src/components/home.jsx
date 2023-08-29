@@ -212,7 +212,7 @@ export default function Home() {
         {/* Add margin at the bottom to move the next section down */}
         <span
           style={{
-            fontFamily: "Hiragino Sans",
+            fontFamily: "Hiragino Sans Bold",
             fontSize: "2.32vw",
             fontWeight: "50.63vw",
           }}
@@ -273,13 +273,19 @@ export default function Home() {
           to="#"
           style={{
             display: "inline-block",
-            padding: "0.72vw 1.45vw",
             backgroundColor: "white",
             border: "0.07vw solid black",
             color: "black",
             textDecoration: "none",
             fontSize: "1.3vw",
             marginBottom: "7vw",
+            alignItems:"center",
+            justifyContent:"center",
+            paddingTop:"0.5vw",
+            paddingBottom:"0.5vw",
+            width:"21.74vw",
+            display:"flex"
+
           }}
         >
           Discover our subsidiaries
@@ -337,6 +343,7 @@ export default function Home() {
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
+                color: 'black'
               }}
             >
               View Founder’s Note
@@ -396,6 +403,7 @@ export default function Home() {
                 background: 'transparent',
                 border: 'none',
                 cursor: 'pointer',
+                color: 'black'
               }}
             >
               Hide Founder’s Note
@@ -406,21 +414,6 @@ export default function Home() {
         <div id='tc'>
           <Testimonialscarousel/>
         </div>
-        <Link className="btn btn-outline-warning" to="/services">
-          View all services
-        </Link>
-        
-
-
-
-
-
-
-
-
-
-
-
       <br />
       <ContactForm />
     </div>

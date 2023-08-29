@@ -61,6 +61,7 @@ const About = () => {
               fontSize: "1.14vw",
               display: "flex",
               justifyContent: "center",
+              alignItems:"center"
             }}
           >
             Have a project in mind?
@@ -80,9 +81,10 @@ const About = () => {
               fontSize: "1.14vw",
               display: "flex",
               justifyContent: "center",
+              alignItems:"center"
             }}
           >
-            Discover out subsidiaries
+            Discover our subsidiaries
           </Link>
         </div>
       </div>

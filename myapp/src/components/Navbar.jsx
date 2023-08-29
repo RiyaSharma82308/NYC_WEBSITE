@@ -127,6 +127,7 @@ function Navbar() {
             fontSize: "1.14vw",
             display: "flex",
             justifyContent: "center",
+            alignItems:"center",
             fontFamily: "Zabal DEMO",
           }}
         >
