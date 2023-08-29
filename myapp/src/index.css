@@ -137,5 +137,29 @@ code {
   z-index: 999;
   transform: translateY(-50%); /* Center the arrows vertically */
 }
+/* CustomNavbar.css */
+
+/* Add your other styles here */
+
+/* CustomNavbar.css */
+
+/* Add your other styles here */
+
+.custom-link {
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-link.active {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+  
+}
+.custom-link:hover {
+  color: black;
+  
+}
 
 
