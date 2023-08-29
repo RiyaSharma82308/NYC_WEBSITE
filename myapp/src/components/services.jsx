@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import ContactForm from './ContactForm';
 
 export default class Services extends Component {
   render() {
@@ -214,7 +215,9 @@ export default class Services extends Component {
     </div>
 </div>
 </div>
-
+        <div style={{marginTop:"3vw"}}>
+        <ContactForm/>
+        </div>
 
       </div>
     )

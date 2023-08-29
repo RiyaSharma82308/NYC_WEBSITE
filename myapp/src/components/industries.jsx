@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Industriescarousel from './Industriescarousel';
+import ContactForm from './ContactForm';
 
 export default class Industries extends Component {
   render() {
@@ -23,7 +24,7 @@ export default class Industries extends Component {
           <div style={{ display: "flex", alignItems: "center", marginRight:"15vw", marginLeft:"14vw", paddingBottom:"5.7vw" }}>
   <img src={require("../images/services1.png")} style={{ height: "39.16vw",width:"39.16vw",marginLeft: "-8vw" }} />
   <div style={{marginLeft:"8vw"}}>
-          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw"}}>Trading & Investment</span>
+          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw",lineHeight:"6.96vw"}}>Trading & Investment</span>
       <p style={{ fontFamily: "Zabal DEMO", fontSize: "1.3vw",lineHeight:"1.58vw", paddingTop:"5vw",fontWeight:"500"}}>
           Lorem ipsum dolor sit amet, adipiscing elit. Maecenas vel dictum risus.
           consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor
@@ -59,7 +60,7 @@ export default class Industries extends Component {
           <div style={{ display: "flex", alignItems: "center", marginRight:"15vw", marginLeft:"14vw", paddingBottom:"5.7vw" }}>
   <img src={require("../images/services1.png")} style={{ height: "39.16vw",width:"39.16vw",marginLeft: "-8vw" }} />
   <div style={{marginLeft:"8vw"}}>
-          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw"}}>Real Estate</span>
+          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw",lineHeight:"6.96vw"}}>Real Estate</span>
       <p style={{ fontFamily: "Zabal DEMO", fontSize: "1.3vw",lineHeight:"1.58vw", paddingTop:"5vw",fontWeight:"500"}}>
           Lorem ipsum dolor sit amet, adipiscing elit. Maecenas vel dictum risus.
           consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor
@@ -77,7 +78,7 @@ export default class Industries extends Component {
           <div style={{ display: "flex", alignItems: "center", marginRight:"15vw", marginLeft:"14vw", paddingBottom:"5.7vw" }}>
   <img src={require("../images/services1.png")} style={{ height: "39.16vw",width:"39.16vw",marginLeft: "-8vw" }} />
   <div style={{marginLeft:"8vw"}}>
-          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw"}}>Food & Agriculture</span>
+          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw",lineHeight:"6.96vw"}}>Food & Agriculture</span>
       <p style={{ fontFamily: "Zabal DEMO", fontSize: "1.3vw",lineHeight:"1.58vw", paddingTop:"5vw",fontWeight:"500"}}>
           Lorem ipsum dolor sit amet, adipiscing elit. Maecenas vel dictum risus.
           consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor
@@ -167,7 +168,7 @@ export default class Industries extends Component {
           <div style={{ display: "flex", alignItems: "center", marginRight:"15vw", marginLeft:"14vw", paddingBottom:"5.7vw" }}>
   <img src={require("../images/services1.png")} style={{ height: "39.16vw",width:"39.16vw",marginLeft: "-8vw" }} />
   <div style={{marginLeft:"8vw"}}>
-          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw"}}>Logistics & Distribution</span>
+          <span style={{fontFamily:'Hiragino Sans Bold', fontSize:"4.64vw",lineHeight:"6.96vw"}}>Logistics & Distribution</span>
       <p style={{ fontFamily: "Zabal DEMO", fontSize: "1.3vw",lineHeight:"1.58vw", paddingTop:"5vw",fontWeight:"500"}}>
           Lorem ipsum dolor sit amet, adipiscing elit. Maecenas vel dictum risus.
           consectetur adipiscing elit. Maecenas vel dictum risus. Lorem ipsum dolor
@@ -178,10 +179,9 @@ export default class Industries extends Component {
   </div>
 </div>
 </div>
-
-
-
-
+<div style={{marginTop:"3vw"}}>
+        <ContactForm/>
+        </div>
     </div>
   )
 }

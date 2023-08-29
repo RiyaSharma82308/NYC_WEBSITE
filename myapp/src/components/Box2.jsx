@@ -205,11 +205,12 @@ export default function Box2() {
                 letterSpacing: "0em",
                 textAlign: "left",
                 color: "white",
-                fontFamily:'Zabal DEMO'
+                fontFamily:'Zabal DEMO',
+                width:"27.75vw"
               }}
             >
-              Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-              <br /> Labore doloremque quos id{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+               Labore doloremque quos id{" "}
             </p>
           </div>
           <div style={{ marginLeft: "48.7vw" }}>
@@ -230,8 +231,6 @@ export default function Box2() {
           <Link
             to="/"
             style={{
-              paddingTop: "0.3vw",
-              paddingBottom: "0.5vw",
               border: "0.06vw solid white",
               color: "white",
               width: "18.99vw",
@@ -240,6 +239,7 @@ export default function Box2() {
               fontSize: "1.14vw",
               display: "flex",
               justifyContent: "center",
+              alignItems:"center",
               marginLeft: "51.36vw",
               marginTop: "3.48vw",
               fontFamily:'Zabal DEMO'

@@ -4,6 +4,7 @@ import logo from "../images/logo.png";
 import hamburger from "../images/hamburger.png";
 import "./CustomNavbar.css";
 import { Link, useLocation } from "react-router-dom";
+import openedHamburger from "../images/opened-hamburger.png"; 
 
 function Navbar() {
   const location = useLocation(); // Get the current location
@@ -14,7 +15,7 @@ function Navbar() {
     { text: "Industries", link: "/industries" },
     { text: "NYC Subsidiaries", link: "/subsidiaries" },
     { text: "Careers", link: "/careers2" },
-    "Connect with us",
+    { text: "Connect with us", link: "/ContactForm" },
     "nycinnovateindustries@gmail.com",
     "+91 9429323599",
   ];
@@ -30,7 +31,7 @@ function Navbar() {
   return (
     <div className="h-screen bg-gray-200 flex justify-center pt-12">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           <img
             src={logo}
             alt="Logo"
@@ -39,26 +40,24 @@ function Navbar() {
           />
         </Link>
         <div className="d-flex justify-content-center align-items-center flex-grow-1">
-          {/* Centering the hamburger image */}
           <img
             ref={imgRef}
             onClick={() => setOpen(!open)}
-            src={hamburger}
+            src={open ? openedHamburger : hamburger}
             alt="hamburger"
-            style={{ width: "3.16vw", height: "3.16vw" }}
+            style={{ width: "3.16vw", height: "3.16vw", marginLeft: "5.06vw" }}
             className="h-6 w-6 object-cover border-4 rounded-full cursor-pointer"
           />
         </div>
         {open && (
           <div
             ref={menuRef}
-            className="position-absolute dropdown-menu show p-4"
+            className="dropdown-menu show p-4"
             style={{
               backgroundColor: "#EBE6CC",
-              top: "4.3vw",
-              left: 0,
               width: "100%",
-              height: "43.04vw",
+              height: "63.04vw",
+              marginTop: "67.11vw",
               zIndex: 1000,
             }}
           >
@@ -68,15 +67,19 @@ function Navbar() {
                   onClick={() => setOpen(false)}
                   className="p-2 text-lg cursor-pointer"
                   key={index}
-                  style={{
-                    fontFamily: "Hiragino Sans Bold",
-                  }}
                 >
                   <Link
                     to={menu.link}
                     className={`custom-link ${
                       location.pathname === menu.link ? "active" : ""
                     }`}
+                    style={{
+                      fontFamily: "Hiragino Sans Bold",
+                      fontWeight: "50.63vw",
+                      fontSize: "2.22vw",
+                      lineHeight: "3.8vw",
+                      textAlign: "Center",
+                    }}
                   >
                     {menu.text}
                   </Link>
@@ -85,9 +88,14 @@ function Navbar() {
               <li
                 className="p-2 text-lg cursor-pointer"
                 style={{
-                  margin: "1.27vw 3.16vw",
-                  display: "inline-block",
                   fontFamily: "Zabal DEMO",
+                  fontSize: "1.14vw",
+                  fontWeight: "500",
+                  lineHeight: "1.39vw",
+                  letterSpacing: "0em",
+                  textAlign: "left",
+                  display: "inline-block",
+                  marginTop: "2vw",
                 }}
               >
                 <img
@@ -100,9 +108,15 @@ function Navbar() {
               <li
                 className="p-2 text-lg cursor-pointer"
                 style={{
-                  margin: "1.27vw 3.16vw",
-                  display: "inline-block",
                   fontFamily: "Zabal DEMO",
+                  fontSize: "1.14vw",
+                  fontWeight: "500",
+                  lineHeight: "1.39vw",
+                  letterSpacing: "0em",
+                  textAlign: "left",
+                  display: "inline-block",
+                  marginTop: "2vw",
+                  marginLeft: "10vw",
                 }}
               >
                 <img
@@ -127,8 +141,9 @@ function Navbar() {
             fontSize: "1.14vw",
             display: "flex",
             justifyContent: "center",
-            alignItems:"center",
+            alignItems: "center",
             fontFamily: "Zabal DEMO",
+            marginRight:"1.5vw"
           }}
         >
           Have a project in mind?

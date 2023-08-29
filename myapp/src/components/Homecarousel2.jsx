@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const imageTextData = [
   {
-    text: "YELLOW1",
-    image: "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png",
+    text: "Our Vision...",
+    image: "https://res.cloudinary.com/dkm3kczin/image/upload/v1692592049/home_violet_enlarged_hkj4fc.png",
   },
   {
-    text: "YELLOW2",
+    text: "Our Mission...",
     image: "https://res.cloudinary.com/dkm3kczin/image/upload/v1692591963/home_yellow_enlarged_eo5jcu.png",
   },
 ];
@@ -35,27 +35,26 @@ export default function Homecarousel() {
     >
       <div
         className="text-container"
-        style={{ flex: 1, marginTop: "-7vw", marginLeft: "12.66vw" }}
+        style={{ flex: 1, marginTop: "0vw", marginLeft: "12.66vw" }}
       >
         <p
           style={{
+            fontFamily: "Hiragino Sans Bold",
+            fontSize: "4.05vw",
+            fontWeight: "800",
+            lineHeight: "6.08vw",
+            letterSpacing: "0em",
             textAlign: "left",
             display: "flex",
             flexDirection: "column",
-            marginTop:"9vw"
           }}
         >
-          <span style={{ color: "black", fontFamily: "Hiragino Sans Bold",
-            fontSize: "4.05vw",marginBottom: "1em" }}>We are...</span>
-          {imageTextData[currentIndex].text === "YELLOW1" ? (
-            <span style={{ color: "black", fontFamily:"Zabal DEMO", fontSize:"1.74vw", textAlign: "left",
-            display: "flex", flexDirection: "column"}}>Yellow1<span style={{fontFamily:"Zabal Bold", fontSize:"1.74vw",paddingTop: "1.5em"}}>Dolor sit amet</span></span>
-            
+          <span style={{ color: "black" }}>Our </span>
+          {imageTextData[currentIndex].text === "Our Vision..." ? (
+            <span style={{ color: "rgba(73, 80, 162, 1)" }}>Vision...</span>
           ) : (
-            <span style={{ color: "black", fontFamily:"Zabal DEMO", fontSize:"1.74vw", textAlign: "left",
-            display: "flex", flexDirection: "column"}}>Yellow2<span style={{fontFamily:"Zabal Bold", fontSize:"1.74vw",paddingTop: "1.5em"}}>Dolor sit amet</span></span>
+            <span style={{ color: "rgba(218, 193, 38, 1)" }}>Mission...</span>
           )}
-          <Link to="/about" style={{ color: "black", fontFamily:"Zabal DEMO", fontSize:"1.3vw", textAlign: "left", display: "flex", flexDirection: "column", textDecoration: "none",border: "0.07vw solid rgba(35, 31, 32, 1)",width:"21.74vw", height:"2.9vw", whiteSpace: "nowrap", justifyContent:"center", alignItems:"center",marginTop:"10vw"  }}>Know more about us</Link>
         </p>
       </div>
       <div

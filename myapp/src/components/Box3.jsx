@@ -175,11 +175,12 @@ export default function Box3() {
               lineHeight: "1.84vw",
               letterSpacing: "0em",
               textAlign: "left",
-              fontFamily:'Zabal DEMO'
+              fontFamily:'Zabal DEMO',
+              width:"27.75vw",
             }}
           >
-            Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.
-            <br /> Labore doloremque quos id
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore doloremque quos id
           </p>
         </div>
 
@@ -214,7 +215,8 @@ export default function Box3() {
               justifyContent: "center",
               marginLeft: "8.86vw",
               marginTop: "3.48vw",
-              fontFamily:'Zabal DEMO'
+              fontFamily:'Zabal DEMO',
+              alignItems:"center"
             }}
           >
             Visit website

@@ -56,13 +56,13 @@ const ContactForm = () => {
         <h2
           style={{
             position:"absolute",
-            fontSize: "2.53vw",
+            fontSize: "2.9vw",
             fontWeight: "800",
             lineHeight: "3.8vw",
             letterSpacing: "0em",
             textAlign: "left",
             left:"8.35vw",
-            font:'Hiragino Sans Bold'
+            fontFamily:'Hiragino Sans Bold'
             // backgroundColor:"brown"
           }}
         >
@@ -100,7 +100,8 @@ const ContactForm = () => {
             display: "flex",
             justifyContent: "center",
             left:"76.57vw",
-            alignItems:"center"
+            alignItems:"center",
+            fontFamily:"Zabal DEMO"
           }}
         >
           Have a project in mind?
@@ -123,6 +124,7 @@ const ContactForm = () => {
                     lineHeight: "1.39vw",
                     letterSpacing: "0em",
                     textAlign: "left",
+                    fontFamily:"Zabal DEMO"
                   }}
                 >
                   Name:
@@ -153,6 +155,7 @@ const ContactForm = () => {
                       lineHeight: "1.39vw",
                       letterSpacing: "0em",
                       textAlign: "left",
+                      fontFamily:"Zabal DEMO"
                     }}
                   >
                     Email:
@@ -182,6 +185,7 @@ const ContactForm = () => {
                       lineHeight: "1.39vw",
                       letterSpacing: "0em",
                       textAlign: "left",
+                      fontFamily:"Zabal DEMO"
                     }}
                   >
                     Contact Number:
@@ -213,6 +217,7 @@ const ContactForm = () => {
                     lineHeight: "1.39vw",
                     letterSpacing: "0em",
                     textAlign: "left",
+                    fontFamily:"Zabal DEMO"
                   }}
                 >
                   Message:
@@ -235,7 +240,7 @@ const ContactForm = () => {
               <div className="form-group">
                 <button
                   id="projectsubmit"
-                  style={{ marginTop: "0.32vw", fontWeight: "31.65vw" }}
+                  style={{ marginTop: "0.32vw", fontWeight: "31.65vw", fontFamily:"Zabal DEMO" }}
                   variant="outline-warning"
                   type="submit"
                 >

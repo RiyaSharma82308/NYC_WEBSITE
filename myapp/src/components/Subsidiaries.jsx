@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Testimonialscarousel from './Testimonialscarousel';
 import Navbar from './Navbar';
 import Industriescarousel from './Industriescarousel';
+import ContactForm from './ContactForm';
 
 export default class Subsidiaries extends Component {
   render() {
@@ -95,7 +96,9 @@ export default class Subsidiaries extends Component {
             <Testimonialscarousel/>
             </div>
           </div>
-
+          <div style={{marginTop:"3vw"}}>
+        <ContactForm/>
+        </div>
       </div>
     )
   } 

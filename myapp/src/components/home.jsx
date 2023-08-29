@@ -167,45 +167,11 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div
-        style={{
-          backgroundColor: "rgba(235, 230, 204, 0.8)",
-          display: "flex", // Use flexbox for layout
-          flexDirection: "column", // Stack elements vertically
-          alignItems: "flex-start", // Align items to the left
-          height: "56.52vw",
-          paddingLeft: "5%", // Add left padding for the container
-          marginBottom: "2vw", // Add margin at the bottom to create space
-          overflow: "hidden",
-        }}
-      >
-        <span
-          style={{
-            fontSize: "4.64vw",
-            fontFamily: "Hiragino Sans",
-            fontWeight: "bold",
-            textAlign: "left", // Align text to the left
-            maxWidth: "90%", // Limit the width of the text to maintain responsiveness
-            marginTop: "11vw",
-          }}
-        >
-          We are...
-        </span>
-        <span
-          style={{
-            fontFamily: "Zabal DEMO",
-            fontSize: "1.74vw",
-            fontWeight: "31.65vw", // Adjusted font weight
-            textAlign: "left", // Align text to the left
-            marginTop: "1vw", // Add some top margin to separate the spans
-          }}
-        >
-          Lorem ipsum dolor sit amet,
-          <br /> consectetur adipiscing elit.
-          <br />
-          <br /> <span style={{ fontWeight: "56.96vw" }}>Dolor sit amet.</span>
-        </span>
-      </div>
+
+        <div>
+          
+          <Homecarousel/>
+        </div>
 
       <div style={{ marginBottom: "4vw", marginTop: "4vw", marginLeft: "3vw" }}>
         {" "}
@@ -240,7 +206,7 @@ export default function Home() {
             style={{ width: "17.39vw", height: "17.39vw" }}
           />
           <p>
-            To revolutionise the way <br /> businesses operate
+            To revolutionise the way <p>businesses operate</p>
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
@@ -291,20 +257,23 @@ export default function Home() {
           Discover our subsidiaries
         </Link>
       </div>
-
+      <div style={{marginLeft:"0.7vw", marginRight:"0.7vw"}}>
       <Box />
-
-      <br />
-
+      </div>
+          <div style={{marginTop:"2vw", marginLeft:"0.7vw", marginRight:"0.7vw"}}>
       <Box2 />
-
-      <br />
+          </div>
+          <div style={{marginTop:"2vw", marginLeft:"0.7vw", marginRight:"0.7vw"}}>  
       <Box3 />
-      <br />
+          </div>
+
+          <div style={{marginTop:"2vw", marginLeft:"0.7vw", marginRight:"0.7vw"}}>
       <Box4 />
-      <br />
+          </div>
+          <div style={{marginTop:"2vw", marginLeft:"0.7vw", marginRight:"0.7vw"}}>
       <Box5 />
-      <br/>
+          </div>
+
       <div style={{marginTop:"4vw", marginLeft:"3vw"}}>
         <span style={{fontFamily:"Hiragino Sans Bold", fontSize:"2.32vw", fontWeight:"800"}}>Our Services...</span>
       </div>
@@ -317,7 +286,7 @@ export default function Home() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            margin: '2vw 0',
+            marginBottom:"4.7vw"
           }}
         >
           {!isDropdownVisible && (
@@ -411,10 +380,12 @@ export default function Home() {
             </div>
           )}
         </div>
+        <div style={{marginLeft:"3vw"}}>
+          <span style={{fontSize:"2.32vw", fontFamily:"Hiragino Sans Bold"}}>Testimonials</span>
+        </div>
         <div id='tc'>
           <Testimonialscarousel/>
         </div>
-      <br />
       <ContactForm />
     </div>
   );

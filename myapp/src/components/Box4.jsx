@@ -204,11 +204,12 @@ export default function Box4() {
                 letterSpacing: "0em",
                 textAlign: "left",
                 color: "white",
-                fontFamily:'Zabal DEMO'
+                fontFamily:'Zabal DEMO',
+                width:"27.75vw"
               }}
             >
-              Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.{" "}
-              <br /> Labore doloremque quos id{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Labore doloremque quos id
             </p>
           </div>
           <div>
@@ -242,7 +243,8 @@ export default function Box4() {
                 justifyContent: "center",
                 marginLeft: "51.36vw",
                 marginTop: "3.48vw",
-                fontFamily:'Zabal DEMO'
+                fontFamily:'Zabal DEMO', 
+                alignItems:"center"
               }}
             >
               Visit website
