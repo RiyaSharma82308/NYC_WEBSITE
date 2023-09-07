@@ -58,7 +58,7 @@ export default class Subsidiaries extends Component {
                     <span style={{color:"white", fontSize:"0.87vw", fontFamily:"Zabal DEMO",paddingBottom:"0.6vw",paddingTop:"0.1vw"}}>Keyword</span>
                 </div>
             </div>
-            <Link style={{height:"2.9vw",width:"21.74vw",border: "0.07vw solid rgba(35, 31, 32, 1)", display:"flex", justifyContent:"center", fontSize:"1.3vw", fontFamily:"Zabal DEMO",textDecoration:"none", color:"black",paddingTop:"0.4vw",marginTop:"2vw"}}>
+            <Link style={{height:"2.9vw",width:"21.74vw",border: "0.07vw solid rgba(35, 31, 32, 1)", display:"flex", justifyContent:"center", fontSize:"1.3vw", fontFamily:"Zabal DEMO",textDecoration:"none", color:"black",alignItems:"center",marginTop:"2vw"}}>
                 Read article
             </Link>
           </div>
@@ -82,7 +82,7 @@ export default class Subsidiaries extends Component {
                     <span style={{color:"white", fontSize:"0.87vw", fontFamily:"Zabal DEMO",paddingBottom:"0.6vw",paddingTop:"0.1vw"}}>Keyword</span>
                 </div>
             </div>
-            <Link style={{height:"2.9vw",width:"21.74vw",border: "0.07vw solid rgba(35, 31, 32, 1)", display:"flex", justifyContent:"center", fontSize:"1.3vw", fontFamily:"Zabal DEMO",textDecoration:"none", color:"black",paddingTop:"0.4vw",marginTop:"2vw"}}>
+            <Link style={{height:"2.9vw",width:"21.74vw",border: "0.07vw solid rgba(35, 31, 32, 1)", display:"flex", justifyContent:"center", fontSize:"1.3vw", fontFamily:"Zabal DEMO",textDecoration:"none", color:"black",alignItems:"center",marginTop:"2vw"}}>
                 Read article
             </Link>
           </div>

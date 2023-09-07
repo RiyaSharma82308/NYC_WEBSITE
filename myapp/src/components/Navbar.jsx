@@ -24,7 +24,7 @@ function Navbar() {
 
   window.addEventListener("click", (e) => {
     if (e.target !== menuRef.current && e.target !== imgRef.current) {
-      setOpen(false);
+      setOpen(false);   
     }
   });
 

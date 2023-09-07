@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import InfiniteScrollingCarousel from "./InfiniteScrollingCarousel";
 import ContactForm from "./ContactForm";
-import Homecarousel from "./Homecarousel";
+import Homecarousel from "./Homecarousel2";
 import ServicesCarousel from "./servicescarousel";
 
 const About = () => {
